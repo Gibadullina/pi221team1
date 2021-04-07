@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+* {
+    font-family: "Ubuntu" sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    box-shadow: 0 0 20px gray;
+    background-color: white;
+    min-height: 310px;
+    margin-top: 150px;
+    padding: 0px;
+    border-radius: 10px;
+    transform: scale(0);
+    opacity: 0;
+    
+}
+.container h1 {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    /* border-radius: 5px; */
+    font-weight: bold;
+    font-style: italic;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+
+}
+.container.load {
+    transform: scale(1);
+    transition: .7s all ease-in-out;
+    opacity: 1;
+}
+.container h1.load {
+    opacity: 1;
+    transition: .9s all ease-in-out;
+    transform: scaleX(1)
+}
+
+form.calc {
+    padding: 50px;
+}
+
+.calc button {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transform: translateX(100);
+    transition: 0.2s;
+}
+.calc button:hover {
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+.calc label {
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    margin-bottom: 10px;
+}
