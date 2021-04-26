@@ -16,7 +16,7 @@
         <h1>Ваш результат</h1>
         <div class="data">
             <h3>Сторона квадрата: ${first_result}</h3>
-            <h3>Результат: ${result}</h3>
+            <h3>Результат: ${result} мм</h3>
         </div>
         <form action="${pageContext.request.contextPath}/Form.jsp">
             <button type="submit" id="button_form">Назад</button>
